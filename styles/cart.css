@@ -28,18 +28,18 @@ table {
 
 /* Zebra striping */
 tr:nth-of-type(odd) { 
-	background: #eee; 
+	background: var(--lightGrey) 
 	}
 
 th { 
-	background: #3498db; 
+	background: var(--grey); 
 	color: white; 
 	font-weight: bold; 
 	}
 
 td, th { 
 	padding: 10px; 
-	border: 1px solid #ccc; 
+	border: 1px solid var(--lightGrey); 
 	text-align: left; 
 	font-size: 18px;
 	}
@@ -69,12 +69,12 @@ only screen and (max-width: 760px),
 		left: -9999px;
 	}
 	
-	tr { border: 1px solid #ccc; }
+	tr { border: 1px solid var(--lightGrey) }
 	
 	td { 
 		/* Behave  like a "row" */
 		border: none;
-		border-bottom: 1px solid #eee; 
+		border-bottom: 1px solid var(--lightGrey);
 		position: relative;
 		padding-left: 50%; 
 	}
